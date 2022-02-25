@@ -57,7 +57,7 @@ To apply the DATAFLOW pragma, we divide the SBM_update module to four functions:
 
 update_x:
 
-<img src="https://user-images.githubusercontent.com/11850122/155672459-6136ec59-73cc-483e-825f-c6e89fab52d4.png" width=25%>
+<img src="https://user-images.githubusercontent.com/11850122/155672459-6136ec59-73cc-483e-825f-c6e89fab52d4.png" width=22%>
 
 set_spin:
 The sign function of the x array is precalculated in this function.
