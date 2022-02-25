@@ -38,7 +38,7 @@ Our test Environment
 
 A reference configuration used by the Xilinx verification team.
 
-![1-4_001](https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png | width="70" height="70")
+![1-4_001](https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png)
 
 
 ## 2-1 Modeling
@@ -57,22 +57,22 @@ To apply the DATAFLOW pragma, we divide the SBM_update module to four functions:
 
 update_x:
 
-![2-3_002](https://user-images.githubusercontent.com/11850122/155672459-6136ec59-73cc-483e-825f-c6e89fab52d4.png | width=120% height=120%)
+![2-3_002](https://user-images.githubusercontent.com/11850122/155672459-6136ec59-73cc-483e-825f-c6e89fab52d4.png)
 
 set_spin:
 The sign function of the x array is precalculated in this function.
 
 update_y:
 
-![2-3_003](https://user-images.githubusercontent.com/11850122/155672657-3a677a5a-7145-4fb2-a899-1a3e91b6eaaa.png | width=50% height=50%)
+![2-3_003](https://user-images.githubusercontent.com/11850122/155672657-3a677a5a-7145-4fb2-a899-1a3e91b6eaaa.png)
 
 To accelerate the calculation of the sum part in update_y, the balance adder tree is implemented.  As there are 19 elements to add, the helper functions pad the array to 32 elements and perform parallel fadd.
 
-![2-3_004](https://user-images.githubusercontent.com/11850122/155672836-22fbdf43-7f50-4867-9d14-14df9715dd52.png | width=50% height=50%)
+![2-3_004](https://user-images.githubusercontent.com/11850122/155672836-22fbdf43-7f50-4867-9d14-14df9715dd52.png)
 
 reset_x_y:
 
-![2-3_005](https://user-images.githubusercontent.com/11850122/155673023-3bf5083a-d0c2-4a7f-9c3b-66c4d89facc8.png | width=50% height=50%)
+![2-3_005](https://user-images.githubusercontent.com/11850122/155673023-3bf5083a-d0c2-4a7f-9c3b-66c4d89facc8.png)
 
 
 ## 3-1 HLS Benefit
