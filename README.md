@@ -132,7 +132,7 @@ Xilinx AAT reference design can provide all the infrastructure required to creat
 
 Enhancement in AAT shell
 * Status/Debugging registers for SQA/SBM modules
-* Add timestamp and time Control
+* Add timestamp and time pause
 
   <img src="https://user-images.githubusercontent.com/11850122/155686853-a86d24d5-9cc8-4c7c-b910-de09a4674ac2.png" width=40%>
 
