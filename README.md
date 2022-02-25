@@ -72,7 +72,7 @@ To accelerate the calculation of the sum part in update_y, the balance adder tre
 
 reset_x_y:
 
-<img src="https://user-images.githubusercontent.com/11850122/155673023-3bf5083a-d0c2-4a7f-9c3b-66c4d89facc8.png" width=20%>
+<img src="https://user-images.githubusercontent.com/11850122/155673023-3bf5083a-d0c2-4a7f-9c3b-66c4d89facc8.png" width=15%>
 
 
 ## 3-1 HLS Benefit
