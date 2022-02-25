@@ -57,14 +57,14 @@ To apply the DATAFLOW pragma, we divide the SBM_update module to four functions:
 
 update_x:
 
-<img src="https://user-images.githubusercontent.com/11850122/155672459-6136ec59-73cc-483e-825f-c6e89fab52d4.png" width=20%>
+<img src="https://user-images.githubusercontent.com/11850122/155672459-6136ec59-73cc-483e-825f-c6e89fab52d4.png" width=25%>
 
 set_spin:
 The sign function of the x array is precalculated in this function.
 
 update_y:
 
-<img src="https://user-images.githubusercontent.com/11850122/155672657-3a677a5a-7145-4fb2-a899-1a3e91b6eaaa.png" width=40%>
+<img src="https://user-images.githubusercontent.com/11850122/155672657-3a677a5a-7145-4fb2-a899-1a3e91b6eaaa.png" width=45%>
 
 To accelerate the calculation of the sum part in update_y, the balance adder tree is implemented.  As there are 19 elements to add, the helper functions pad the array to 32 elements and perform parallel fadd.
 
