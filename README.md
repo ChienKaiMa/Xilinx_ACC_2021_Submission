@@ -75,8 +75,10 @@ Running Linux TCPreplay command to send Quantum-accelerated AAT input from PCAP 
     sudo ./execFrom_sf1.sh tcpreplay --intf1=enp3s0f1 --pps=2 --stats=1 ../Accelerated_Algorithmic_Trading/build/sample/cme_input_arb.pcap
 
 ## 2-1 Modeling
+by Haoyu
 
 ## 2-2 SQA Design & Implementation
+byXiang-Ren
 
 ## 2-3 SBM Design & Implementation
 The pricingEngine::pricingProcess function is modified by replacing the original strategies with ERM and SBM functions.  AAT-SBM uses a different problem formulation from AAT-SQA, which is generated in the corresponding ERM module.
