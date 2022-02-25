@@ -9,7 +9,29 @@ We design and implement Quantum-accelerated Trading Strategies for currency exch
 by Justin
 
 ## 1-3 Source Compiling
+Development Environment
+* A x86 server installed with a Xilinx Avelon U50 accelrator
+* A x86 server installed with a Broadcom BCM957711A 10Gb x 2 SFP port card
+* QSFPx1-to-SFPx4 cable
+* Xilinx Accelerated Algorithmic Trading reference package Q2 (UG1067 v1.1 July 2, 2021)
+* Operation system: Ubuntu 20.04.2 LTS
 
+Settings in ~/.bashrc:
+
+    source /opt/Xilinx/Vitis/2021.1/settings64.sh
+    source /opt/xilinx/xrt/setup.sh
+    export PLATFORM_REPO_PATHS='/opt/xilinx/platforms'
+    export LM_LICENSE_FILE="~/Xilinx.lic"
+    export XILINX_PLATFORM='xilinx_u50_gen3x16_xdma_201920_3'
+    export DEVICE=${PLATFORM_REPO_PATHS}/${XILINX_PLATFORM}/${XILINX_PLATFORM}.xpfm
+    export DM_MODE=DMA
+    
+ Compiling instructions:
+
+    $ cd ../Accelerated_Algorithmic_Trading/build
+    $ make clean
+    $ ./buildall.sh
+    
 ## 1-4 Test Flow
 
 ## 2-1 Modeling
