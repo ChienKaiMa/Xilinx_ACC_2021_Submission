@@ -8,11 +8,8 @@ We design and implement Quantum-accelerated Trading Strategies for currency exch
 ## 1-2 Project Data Format
 by Justin
 
-## 1-3 Source Compiling
+## 1-3 Synthesis & Compiling
 Development Environment
-* A x86 server installed with a Xilinx Avelon U50 accelrator
-* A x86 server installed with a Broadcom BCM957711A 10Gb x 2 SFP port card
-* A QSFPx1-to-SFPx4 cable
 * Operation system: Ubuntu 20.04.2 LTS
 * Xilinx Vitis Software Platform 2021.1
 * Xilinx Accelerated Algorithmic Trading reference package Q2 (UG1067 v1.1 July 2, 2021)
@@ -27,13 +24,21 @@ Settings in ~/.bashrc:
     export DEVICE=${PLATFORM_REPO_PATHS}/${XILINX_PLATFORM}/${XILINX_PLATFORM}.xpfm
     export DM_MODE=DMA
     
- Compiling instructions:
+ Synthesis & Compiling instructions:
 
     $ cd ../Accelerated_Algorithmic_Trading/build
     $ make clean
     $ ./buildall.sh
     
 ## 1-4 Test Flow
+Our test Environment
+* A x86 host installed with a Xilinx Avelon U50 accelrator
+* A x86 host installed with a Broadcom BCM957711A 10Gb x 2 SFP port card
+* A QSFPx1-to-SFPx4 cable
+
+A reference configuration used by the Xilinx verification team.
+![1-4_001](https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png)
+
 
 ## 2-1 Modeling
 
@@ -58,15 +63,15 @@ The sign function of the x array is precalculated in this function.
 
 update_y:
 
-![2-3_003](https://user-images.githubusercontent.com/11850122/155672657-3a677a5a-7145-4fb2-a899-1a3e91b6eaaa.png)
+![2-3_003](https://user-images.githubusercontent.com/11850122/155672657-3a677a5a-7145-4fb2-a899-1a3e91b6eaaa.png | width=30)
 
 To accelerate the calculation of the sum part in update_y, the balance adder tree is implemented.  As there are 19 elements to add, the helper functions pad the array to 32 elements and perform parallel fadd.
 
-![2-3_004](https://user-images.githubusercontent.com/11850122/155672836-22fbdf43-7f50-4867-9d14-14df9715dd52.png)
+![2-3_004](https://user-images.githubusercontent.com/11850122/155672836-22fbdf43-7f50-4867-9d14-14df9715dd52.png | width=60)
 
 reset_x_y:
 
-![2-3_005](https://user-images.githubusercontent.com/11850122/155673023-3bf5083a-d0c2-4a7f-9c3b-66c4d89facc8.png)
+![2-3_005](https://user-images.githubusercontent.com/11850122/155673023-3bf5083a-d0c2-4a7f-9c3b-66c4d89facc8.png  | width=90)
 
 
 ## 3-1 HLS Benefit
