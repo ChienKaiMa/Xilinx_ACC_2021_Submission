@@ -114,11 +114,10 @@ Quantum-accelerated Trading Strategies:
 * Customizable Quantum-accelerated trading strategies
 * Parallel computing on FPGA hardware
 * Built on trading industry-standard of CME and FIX
-* Achieve the new latency limit of the real trading world
 
 Accelerated Algorithmic Trading (AAT) Framework:
 * Full implementation in HLS
-* Designed for Software Engineers
+* Designed for software engineers
 * Source code provided
 * Integrated with Vitis™
 * Runs out of the box on Xilinx Alveo™
@@ -126,7 +125,7 @@ Accelerated Algorithmic Trading (AAT) Framework:
 * Supports XDMA and host memory bridge-based
 
 Quantum-accelerated trading strategies can be executed on CPUs/GPUs but incur additional latency particularly from traversing the PCIe bus. FPGA based trading strategies can significantly lower latency, but typically need large teams of hardware experts and long design cycles.
-Xilinx AAT reference design can provide all the infrastructure required to create a Quantum-accelerated trading application on the FPGA using Xilinx Vitis™ unified platform, and standard Xilinx shells. The design is written in HLS, and all the source code is provided. The design is modular, allowing you to easily replace trading strategy IP blocks in the reference design with your own strategy.
+Xilinx AAT reference design can provide all the infrastructure required to create a Quantum-accelerated trading application on the FPGA using Xilinx Vitis™ unified platform, and standard Xilinx shells. The design is written in HLS, and all the source code is provided. The design is modular, allowing easily replacing trading strategy IP blocks in the reference design with needed strategy.
 
 <img src="https://user-images.githubusercontent.com/11850122/155683919-d6f0f33b-53d5-418b-95b4-2e1da4f79e07.png" width=85%>
 
