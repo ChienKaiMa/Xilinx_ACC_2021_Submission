@@ -38,7 +38,7 @@ Our test Environment:
 
 A reference configuration used by the Xilinx verification team.
 
-<img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=50%>
+<img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=60%>
 
 Running Quantum-accelerated AAT shell on U50 host terminal.
 
@@ -65,7 +65,7 @@ If Linux Netcat has not shown Quantum-accelerated AAT connection IP & Port messa
 
 From U50 host terminal, connection established should be shown "true" and connection status should be shown "SUCCESS”.
 
-<img src="https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png" width=38%>
+<img src="https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png" width=45%>
 
 Running Linux TCPreplay command to send Quantum-accelerated AAT input from PCAP test files host terminal#2.
 
@@ -133,5 +133,5 @@ Enhancement in AAT shell:
 * Status/Debugging registers for SQA/SBM modules
 * Add timestamp and time pause
 
-  <img src="https://user-images.githubusercontent.com/11850122/155686853-a86d24d5-9cc8-4c7c-b910-de09a4674ac2.png" width=40%>
+  <img src="https://user-images.githubusercontent.com/11850122/155686853-a86d24d5-9cc8-4c7c-b910-de09a4674ac2.png" width=50%>
 
