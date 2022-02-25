@@ -9,7 +9,7 @@ We design and implement Quantum-accelerated Trading Strategies for currency exch
 by Justin
 
 ## 1-3 Synthesis & Compiling
-Development Environment
+Development Environment:
 * Operation System: Ubuntu 20.04.2 LTS
 * Xilinx Vitis Software Platform 2021.1
 * Xilinx Accelerated Algorithmic Trading reference package Q2 (UG1067 v1.1 July 2, 2021)
@@ -31,7 +31,7 @@ Settings in ~/.bashrc:
     $ ./buildall.sh
     
 ## 1-4 Test Flow
-Our test Environment
+Our test Environment:
 * A x86 host installed with a Xilinx Avelon U50 accelrator
 * A x86 host installed with a Broadcom BCM957711A 10Gb x 2 SFP port card and PCAP test files
 * A QSFPx1-to-SFPx4 cable
@@ -109,14 +109,14 @@ reset_x_y:
 
 
 ## 3 Features and Benefits
-Quantum-accelerated Trading Strategies
+Quantum-accelerated Trading Strategies:
 * Leverage HLS to develop trading strategies with readability and maintainability
 * Customizable Quantum-accelerated trading strategies
 * Parallel computing on FPGA hardware
 * Built on trading industry-standard of CME and FIX
 * Achieve the new latency limit of the real trading world
 
-Accelerated Algorithmic Trading (AAT) Framework
+Accelerated Algorithmic Trading (AAT) Framework:
 * Full implementation in HLS
 * Designed for Software Engineers
 * Source code provided
@@ -134,5 +134,5 @@ Enhancement in AAT shell
 * Debugging registers for SQA/SBM modules
 * Add timestamp and time Control
 
-<img src="https://user-images.githubusercontent.com/11850122/155685674-fa84e38f-ae1a-4d7c-890c-fd5a913220e6.png" width=50%>
+  <img src="https://user-images.githubusercontent.com/11850122/155685674-fa84e38f-ae1a-4d7c-890c-fd5a913220e6.png" width=40%>
 
