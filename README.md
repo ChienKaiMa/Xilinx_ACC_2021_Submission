@@ -40,7 +40,7 @@ A reference configuration used by the Xilinx verification team.
 
 <img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=55%>
 
-Running AAT shell on U50 host terminal.
+Running Quantum-accelerated AAT shell on U50 host terminal.
 
     sudo reboot (if needed to clean U50 setting)
     cd ../Accelerated_Algorithmic_Trading/build
@@ -65,7 +65,7 @@ If Linux Netcat has not shown Quantum-accelerated AAT connection IP & Port messa
 
 From U50 host terminal, connection established should be shown "true" and connection status should be shown "SUCCESS”.
 
-![1-4_002](https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png)
+<img src="https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png" width=60%>
 
 Running Linux TCPreplay command to send Quantum-accelerated AAT input from PCAP test files host terminal#2.
 
