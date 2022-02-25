@@ -33,13 +33,46 @@ Settings in ~/.bashrc:
 ## 1-4 Test Flow
 Our test Environment
 * A x86 host installed with a Xilinx Avelon U50 accelrator
-* A x86 host installed with a Broadcom BCM957711A 10Gb x 2 SFP port card
+* A x86 host installed with a Broadcom BCM957711A 10Gb x 2 SFP port card and PCAP test files
 * A QSFPx1-to-SFPx4 cable
 
 A reference configuration used by the Xilinx verification team.
 
 <img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=55%>
 
+Running AAT shell on U50 host terminal.
+
+    sudo reboot (if needed to clean U50 setting)
+    cd ../Accelerated_Algorithmic_Trading/build
+    vim support/demo_setup.cfg (if default u50 network setting needed to be changed)
+    ./aat_shell_exe
+    download ./sample/aat.u50_xdma.xclbin
+    run support/demo_setup.cfg
+    datamover threadstart
+    udpip0 getstatus
+    
+Running Linux Netcat command to get Quantum-accelerated AAT output on Broadcom host terminal#1.
+
+    cd ../Network_setting/
+    sudo ./settingNetwork_sf0.sh
+    sudo ./execFrom_sf0.sh ping -w 5 192.168.20.200 (optional test)
+    sudo ./execFrom_sf0.sh nc -n -l 192.168.20.100 12345 -v
+    
+If Linux Netcat has not shown Quantum-accelerated AAT connection IP & Port message, run reconnection on U50 host terminal.
+
+    orderentry reconnect
+    orderentry getstatus
+
+From U50 host terminal, connection established should be shown "true" and connection status should be shown "SUCCESS”.
+
+![1-4_002](https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png)
+
+Running Linux TCPreplay command to send Quantum-accelerated AAT input from PCAP test files host terminal#2.
+
+    cd ../Network_setting/
+    sudo ./settingNetwork_sf1.sh
+    sudo ./execFrom_sf1.sh ping -w 5 192.168.50.101 (optional test)
+    sudo ./execFrom_sf1.sh tcpreplay --intf1=enp3s0f1 --pps=2 --stats=1 ../Accelerated_Algorithmic_Trading/build/sample/cme_input_arb.pcap
 
 ## 2-1 Modeling
 
