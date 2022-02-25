@@ -65,7 +65,7 @@ If Linux Netcat has not shown Quantum-accelerated AAT connection IP & Port messa
 
 From U50 host terminal, connection established should be shown "true" and connection status should be shown "SUCCESS”.
 
-<img src="https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png" width=25%>
+<img src="https://user-images.githubusercontent.com/11850122/155680914-ad137fe7-37af-4048-a270-ee72ed263c0e.png" width=45%>
 
 Running Linux TCPreplay command to send Quantum-accelerated AAT input from PCAP test files host terminal#2.
 
