@@ -38,7 +38,7 @@ Our test Environment:
 
 A reference configuration used by the Xilinx verification team.
 
-<img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=53%>
+<img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=50%>
 
 Running Quantum-accelerated AAT shell on U50 host terminal.
 
