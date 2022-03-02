@@ -18,3 +18,4 @@ print(energy_local)
 energy_local_32 = a.astype(np.float32).dot(state).dot(state)
 print(energy_local_32)
 # -9.5367431640625e-07
+
