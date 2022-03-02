@@ -3,7 +3,7 @@ EXTREME TRADING SOLUTION: Quantum-accelerated trading strategies on Accelerated 
 
 ## 1-1 Project Abstraction
 Quantum Bifurcation Machines can be used for quantum adiabatic optimization and universal quantum computation. TOSHIBA has realized Quantum Bifurcation Machines to Simulated Bifurcation Machine（SBM）Technologies accelerated with NVIDIA GPU.
-We design and implement Quantum-accelerated Trading Strategies for currency arbitrage with replaceable algorithms modular（e.g. Simulated Bifurcation, SB or Simulated Quantum Annealing, SQA）on Xilinx Accelerated Algorithmic Trading (AAT) framework, which is a Fully featured open source reference design for trading applications.
+We design and implement Quantum-accelerated Trading Strategies for currency arbitrage with replaceable algorithms modular（Simulated Bifurcation, SB and Simulated Quantum Annealing, SQA）on Xilinx Accelerated Algorithmic Trading (AAT) framework, which is a Fully featured open source reference design for trading applications.
 
 ## 1-2 Data Generation
 by Justin
