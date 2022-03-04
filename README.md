@@ -1,4 +1,4 @@
-# Xilinx ACC 2021 Submisson
+# Xilinx ACC 2021 Submission
 EXTREME TRADING SOLUTION: Quantum-accelerated trading strategies on Accelerated Algorithmic Trading (AAT) Framework
 
 ## 1-1 Project Abstraction
