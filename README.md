@@ -35,6 +35,7 @@ Our test Environment:
 * A x86 host installed with a Xilinx Avelon U50 accelrator
 * A x86 host installed with a Broadcom BCM957711A 10Gb x 2 SFP port card and PCAP test files
 * A QSFPx1-to-SFPx4 cable
+* AAT demo_setup.cfg and Network_setting can be found in Configuration directory
 
 A reference configuration used by the Xilinx verification team.
 
