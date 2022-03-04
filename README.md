@@ -31,7 +31,7 @@ Settings in ~/.bashrc:
     $ ./buildall.sh
     
 ## 1-4 Test Flow
-Our test Environment:
+Preparation:
 * A x86 host installed with a Xilinx Avelon U50 accelrator
 * A x86 host installed with a Broadcom BCM957711A 10Gb x 2 SFP port card and PCAP test files
 * A QSFPx1-to-SFPx4 cable
