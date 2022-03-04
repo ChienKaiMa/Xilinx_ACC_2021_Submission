@@ -27,4 +27,3 @@
 4. Use validation dataset to validate the performance of the new parameters. Compare with previous results.
    1. If any parameter is optimized to near the bounds, consider going back to step 2. and loosen up the bounds.
    2. If the validation results are very similar multiple (e.g., 10) times in a row, terminate the optimization process
-
