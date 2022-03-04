@@ -21,8 +21,8 @@
    8. $0 < T < 500$ (SQA)
    9. $\Gamma(t)$ : piecewise linear or parametric ($At^b$ or $Ae^{bt}$) (SQA)
 3. Use Nelder-Mead or Powell method to conduct bounded optimization on the objective function
-   1. Nelder-Mead: https://en.wikipedia.org/wiki/Nelder%E2%80%93Mead_method
-   2. Powell: https://en.wikipedia.org/wiki/Powell%27s_method
+   1. Nelder-Mead: https://en.wikipedia.org/wiki/Nelder–Mead_method
+   2. Powell: https://en.wikipedia.org/wiki/Powell's_method
    3. An implementation is available in scipy: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html
 4. Use validation dataset to validate the performance of the new parameters. Compare with previous results.
    1. If any parameter is optimized to near the bounds, consider going back to step 2. and loosen up the bounds.
