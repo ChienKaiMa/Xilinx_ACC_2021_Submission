@@ -4,6 +4,7 @@ Accelerated Algorithmic Trading
 This is a package release for the Accelerated Algorithmic Trading (AAT) design.
 
 Please consult the user guide for build instructions and a quick start overview:
+
 https://www.xilinx.com/member/fintech.html#documents
 
 A version of the user guide is included in the doc folder of this package for
