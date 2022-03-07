@@ -23,13 +23,13 @@ Settings in ~/.bashrc:
     export XILINX_PLATFORM='xilinx_u50_gen3x16_xdma_201920_3'
     export DEVICE=${PLATFORM_REPO_PATHS}/${XILINX_PLATFORM}/${XILINX_PLATFORM}.xpfm
     export DM_MODE=DMA
-    
+
  Synthesis & Compiling instructions:
 
     $ cd ../Accelerated_Algorithmic_Trading/build
     $ make clean
     $ ./buildall.sh
-    
+
 ## 1-4 Test Flow
 Preparation:
 * A x86 host installed with a Xilinx Avelon U50 accelrator
@@ -41,6 +41,10 @@ A reference configuration used by the Xilinx verification team.
 
 <img src="https://user-images.githubusercontent.com/11850122/155674938-61f34770-496f-43bc-8310-6f91ae20ce40.png" width=60%>
 
+System block diagram
+
+![testing_flow](img/flow.png)
+
 Running Quantum-accelerated AAT shell on U50 host terminal.
 
     sudo reboot (if needed to clean U50 setting)
@@ -51,14 +55,14 @@ Running Quantum-accelerated AAT shell on U50 host terminal.
     run support/demo_setup.cfg
     datamover threadstart
     udpip0 getstatus
-    
+
 Running Linux Netcat command to get Quantum-accelerated AAT output on Broadcom host terminal#1.
 
     cd ../Network_setting/
     sudo ./settingNetwork_sf0.sh
     sudo ./execFrom_sf0.sh ping -w 5 192.168.20.200 (optional test)
-    sudo ./execFrom_sf0.sh nc -n -l 192.168.20.100 12345 -v
-    
+    sudo ./execFrom_sf0.sh nc -n -l 192.168.20.100 12345 -v > orderentries.bin
+
 If Linux Netcat has not shown Quantum-accelerated AAT connection IP & Port message, run reconnection on U50 host terminal.
 
     orderentry reconnect
@@ -74,6 +78,12 @@ Running Linux TCPreplay command to send Quantum-accelerated AAT input from Broad
     sudo ./settingNetwork_sf1.sh
     sudo ./execFrom_sf1.sh ping -w 5 192.168.50.101 (optional test)
     sudo ./execFrom_sf1.sh tcpreplay --intf1=enp3s0f1 --pps=2 --stats=1 ../Accelerated_Algorithmic_Trading/build/sample/cme_input_arb.pcap
+
+For instructions of generating pcap file
+please refer to [This page](test/doc/README_generator.md)
+
+For decoding the output file of netcat `orderentries.bin`
+please refer to [This page](test/doc/README_decoder.md)
 
 ## 2-1 Currency Arbitrage QUBO Formulation
 https://github.com/kevinjantw/Xilinx_ACC_2021_Submission/tree/main/QUBO_formulation
